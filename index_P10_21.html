@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 gutierrez muñoz</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+    <h1>Cereso</h1>
+    <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+
+                <div id="elegir"></div>
+                <button type="button" class="precionar-btn" onclick="empleado()">Empleado</button>
+                <button type="button" class="precionar-btn" onclick="reo()">Reo</button>
+
+            </div>
+            <div class="logo">
+                <img src="image/poli.png" alt="Policia_Municipal">
+                <img src="image/logochi.png" alt="Estado_Chihuahua">
+            </div>
+            <form  id="empleado" class="input-group">
+               
+                <input type="text" class="input-field" placeholder="Nombre Completo">
+                <input type="text" class="input-field" placeholder="Numero de empleado">
+                <input type="text" class="input-field" placeholder="Fecha de nacimiento(DD/MM/YYYY)">
+                <input type="text" class="input-field" placeholder="NSS">
+                <input type="text" class="input-field" placeholder="CURP">
+                <input type="checkbox" class="check-box"><span>Verifica que tus datos sean correctos</span>
+                <input type="submit" class="btn-submit" value="Guardar">
+            </form>
+            <form id="reo" class="input-group">
+               
+                <input type="text" class="input-field" placeholder="Nombre Completo">
+                <input type="text" class="input-field" placeholder="Numero de reo">
+                <input type="text" class="input-field" placeholder="Fecha de nacimiento(DD/MM/YYYY)">
+                <input type="text" class="input-field" placeholder="Condena">
+                <input type="text" class="input-field" placeholder="CURP">
+                <input type="checkbox" class="check-box"><span>Verifica que tus datos sean correctos</span>
+                <input type="submit" class="btn-submit" value="Guardar">
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("empleado");
+        var y = document.getElementById("reo");
+        var z = document.getElementById("elegir");
+
+        function empleado() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+
+        function reo() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "120px";
+        }
+    </script>
+</body>
+</html>
